@@ -1,0 +1,86 @@
+.solutions {
+  background: $primary;
+}
+
+.solutions-inner {
+  width: 100%;
+  margin-bottom: 20vh;
+  @include flex(flex-start, center, row);
+  padding: 200px 40px;
+  gap: 70px;
+}
+
+.solutions-text {
+  width: 100%;
+  @include flex(flex-start, center, column);
+  gap: 10px;
+  h2 {
+    color: #fff;
+    font-size: $header;
+
+    font-weight: bold;
+  }
+  p {
+    color: #fff;
+    font-size: $text;
+  }
+}
+
+.solutions-btns {
+  @include flex(flex-start, center, column);
+  gap: 30px;
+  .solutions-btn {
+    text-transform: uppercase;
+    font-size: calc($header - 8px);
+    color: $secondary;
+    @include flex(center, center, row);
+    gap: 20px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .solutions-inner {
+    @include flex(center, center, column);
+    padding: 40px;
+  }
+  .solutions-text {
+    h2 {
+      font-size: calc($header - 7px);
+    }
+    p {
+      font-size: calc($text - 3px);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .solutions-inner {
+    padding: 40px;
+  }
+  .solutions-text {
+    h2 {
+      font-size: calc($header - 7px);
+    }
+    p {
+      font-size: calc($text - 3px);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .solutions-inner {
+    padding: 40px 20px;
+  }
+  .solutions-text {
+    h2 {
+      font-size: calc($header - 7px);
+    }
+    p {
+      font-size: calc($text - 3px);
+    }
+  }
+}

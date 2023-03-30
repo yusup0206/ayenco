@@ -1,0 +1,140 @@
+.products-inner {
+  width: 100%;
+  padding: 40px;
+  @include flex(center, center, column);
+  gap: 70px;
+  margin-bottom: 30vh;
+}
+
+.products-inner-page {
+  width: 100%;
+  padding: 40px;
+  @include flex(center, center, column);
+  gap: 70px;
+  margin-top: 100px;
+  margin-bottom: 30vh;
+}
+
+.products-header {
+  width: 50%;
+  @include flex(center, center, column);
+  text-align: center;
+  h2 {
+    color: $primary;
+    font-size: $header;
+    font-weight: bold;
+  }
+  p {
+    color: $text-color;
+    font-size: $text;
+  }
+}
+
+.products-body {
+  @include flex(center, center, row);
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product {
+  @include flex(center, center, column);
+  text-decoration: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 30px 30px 0px 30px;
+
+  p {
+    color: #8b8b8b;
+    font-size: calc($text - 10px);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 0px;
+  }
+
+  &:hover {
+    p {
+      color: $primary;
+      transition: 0.3s all ease;
+    }
+    .product-img {
+      .product-img-wrapper {
+        opacity: 1;
+        transition: 0.3s all ease;
+      }
+    }
+  }
+}
+
+.product-img {
+  position: relative;
+  width: 215px;
+  height: 215px;
+  //width: 100%;
+  //height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.product-img-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  @include flex(center, center, row);
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.5s all ease;
+  img {
+    width: 81px;
+    height: 81px;
+  }
+}
+
+.products-btn {
+  width: 150px;
+  text-decoration: none;
+  color: #fff;
+  font-size: $link;
+  font-weight: 400;
+  border: 2px solid $secondary;
+  background: $secondary;
+  padding: 5px 16px;
+  @include flex(center, center, row);
+  transition: 0.3s all ease;
+
+  &:hover {
+    color: $secondary;
+    transition: 0.3s all ease;
+    border: 2px solid $secondary;
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .products-header {
+    h2 {
+      font-size: calc($header - 7px);
+    }
+    p {
+      font-size: calc($text - 3px);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products-btn {
+    width: 120px;
+    font-size: calc($link - 4px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .products-inner {
+    padding: 20px;
+  }
+}

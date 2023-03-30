@@ -1,0 +1,43 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins-Regular.ttf');
+}
+
+@mixin flex($items, $justify, $direction) {
+  display: flex;
+  align-items: $items;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins' !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// colors
+$primary: #0c2f4c;
+$secondary: #ff9327;
+$text-color: #8b8b8b;
+
+// text sizes
+$header: 40px;
+$text: 22px;
+$link: 18px;

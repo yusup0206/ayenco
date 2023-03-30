@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Ayenco</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-page">
+        <div class="container">
+          <div class="nav-inner">
+            <a href="./index.html" class="nav-logo">
+              <img src="./img/ayenco blue logo.png" alt="" />
+            </a>
+            <ul class="nav-links">
+              <li>
+                <a class="nav-link-page" href="./index.html">Home</a>
+              </li>
+              <li>
+                <a
+                  class="nav-link-page active-nav-link"
+                  href="./products-page.html"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a class="nav-link-page" href="./solutions-page.html"
+                  >Solutions</a
+                >
+              </li>
+              <li>
+                <a class="nav-link-page" href="./about-ayenco-page.html"
+                  >About Ayenco</a
+                >
+              </li>
+            </ul>
+            <div class="nav-btn">
+              <div class="lang">
+                <div class="curr-lang">
+                  <a class="curr-lang-a" href="#">en</a>
+                  <img src="./img/Polygon 2.svg" alt="" />
+                </div>
+                <div class="lang-dropdown">
+                  <a href="#">ru</a>
+                  <a href="#">tm</a>
+                </div>
+              </div>
+              <a class="get-in-touch" href="#contact">Get in touch</a>
+            </div>
+
+            <div class="nav-burger">
+              <div class="nav-burger-wrapper">
+                <div class="nav-burger-wrapper-logo">
+                  <img src="./img/Ayenco (White, Horizontal).png" alt="" />
+                </div>
+                <ul>
+                  <li class="nav-burger-li">
+                    <a class="nav-a" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-burger-li active-nav-burger-li">
+                    <a class="nav-a" href="./products-page.html">Products</a>
+                  </li>
+                  <li class="nav-burger-li">
+                    <a class="nav-a" href="./solutions-page.html">Solutions</a>
+                  </li>
+                  <li class="nav-burger-li">
+                    <a class="nav-a" href="./about-ayenco-page.html"
+                      >About Ayenco</a
+                    >
+                  </li>
+                </ul>
+                <div class="nav-burger-wrapper-lang">
+                  <a class="mobile-curr-lang active-mobile-curr-lang" href="#"
+                    >en</a
+                  >
+                  <a class="mobile-curr-lang" href="#">ru</a>
+                  <a class="mobile-curr-lang" href="#">tm</a>
+                </div>
+                <a class="nav-burger-wrapper-get-in-touch" href="#contact"
+                  >Get in touch</a
+                >
+              </div>
+            </div>
+
+            <a href="#" class="toggle-button">
+              <span class="bar-page"></span>
+              <span class="bar-page"></span>
+              <span class="bar-page"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="products slide">
+        <div class="container">
+          <div class="products-inner-page">
+            <div class="products-header text">
+              <h2>Products</h2>
+              <p>
+                Ayenco offers a range of polypropylene and petroleum products,
+                including BOPP films
+              </p>
+            </div>
+            <div class="products-body img-wrapper">
+              <a href="#" class="product">
+                <div class="product-img">
+                  <img src="./img/turkmenplen.jpg" alt="" />
+                  <div class="product-img-wrapper">
+                    <img src="./img/🦆 icon _eye_.svg" alt="" />
+                  </div>
+                </div>
+                <p>TPP D30 S</p>
+              </a>
+              <a href="#" class="product">
+                <div class="product-img">
+                  <img src="./img/turkmenplen.jpg" alt="" />
+                  <div class="product-img-wrapper">
+                    <img src="./img/🦆 icon _eye_.svg" alt="" />
+                  </div>
+                </div>
+                <p>TPP F 79 FB</p>
+              </a>
+              <a href="#" class="product">
+                <div class="product-img">
+                  <img src="./img/turkmenplen.jpg" alt="" />
+                  <div class="product-img-wrapper">
+                    <img src="./img/🦆 icon _eye_.svg" alt="" />
+                  </div>
+                </div>
+                <p>TPP D382 BF</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact slide">
+        <div class="container">
+          <div class="contact-inner">
+            <div class="contact-tabs text-opacity">
+              <div class="contact-tabs-btns">
+                <button
+                  class="tablink contact-tabs-btn active-contact-tabs-btn"
+                  onclick="openTab(event,'Take')"
+                >
+                  Take an offer
+                </button>
+                <button
+                  class="tablink contact-tabs-btn"
+                  onclick="openTab(event,'Give')"
+                >
+                  Give an offer
+                </button>
+              </div>
+
+              <div id="Take" class="tab take-tab">
+                <div class="take-tab-text">
+                  <h2>Take an offer</h2>
+                  <p>
+                    You can make purchase offers to Ayenco by specifying the
+                    desired product/service, quantities, and payment/delivery
+                    terms.
+                  </p>
+                  <a href="tel:+90 553 443 23 43">
+                    <i class="fa-solid fa-phone"></i>
+                    +90 553 443 23 43</a
+                  >
+                  <a href="mailto:info@ayenco.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@ayenco.com</a
+                  >
+                </div>
+                <form class="tab-form" action="">
+                  <div class="custom-select">
+                    <select>
+                      <option value="0">Select a product</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                    </select>
+                  </div>
+
+                  <div class="custom-select">
+                    <select>
+                      <option value="0">Select a weight</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                    </select>
+                  </div>
+
+                  <div class="select-options">
+                    <p>Select</p>
+                    <p class="radio-btn">
+                      <input
+                        type="radio"
+                        id="test1"
+                        name="radio-group"
+                        checked
+                      />
+                      <label for="test1">CIF</label>
+                    </p>
+                    <p class="radio-btn">
+                      <input type="radio" id="test2" name="radio-group" />
+                      <label for="test2">FOB</label>
+                    </p>
+                  </div>
+                  <button>submit</button>
+                </form>
+              </div>
+
+              <div id="Give" class="tab give-tab" style="display: none">
+                <div class="give-tab-text">
+                  <h2>Give an offer</h2>
+                  <p>
+                    You can make purchase offers to Ayenco by specifying the
+                    desired product/service, quantities, and payment/delivery
+                    terms.
+                  </p>
+                  <a href="tel:+90 553 443 23 43">
+                    <i class="fa-solid fa-phone"></i>
+                    +90 553 443 23 43</a
+                  >
+                  <a href="mailto:info@ayenco.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@ayenco.com</a
+                  >
+                </div>
+                <form class="tab-form" action="">
+                  <div class="custom-select">
+                    <select>
+                      <option value="0">Select a product</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                    </select>
+                  </div>
+
+                  <div class="custom-select">
+                    <select>
+                      <option value="0">Select a weight</option>
+                      <option value="1">product 1</option>
+                      <option value="2">product 2</option>
+                      <option value="3">product 3</option>
+                      <option value="4">product 4</option>
+                    </select>
+                  </div>
+
+                  <div class="tab-form-input">
+                    <input type="text" placeholder="Offer a price" />
+                    <!-- <img src="./img/$.svg" alt="" /> -->
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 21 37"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.4853 24.816C20.4853 26.1938 20.1409 27.4889 19.452 28.7013C18.7907 29.9138 17.7987 30.9333 16.476 31.76C15.1809 32.5867 13.6378 33.0827 11.8467 33.248V36.596H9.16V33.248C6.56978 33 4.47556 32.1871 2.87733 30.8093C1.27911 29.4316 0.48 27.6129 0.48 25.3533H5.52267C5.60533 26.428 5.94978 27.3236 6.556 28.04C7.16222 28.7289 8.03022 29.1698 9.16 29.3627V20.2693C7.31378 19.8009 5.812 19.3324 4.65467 18.864C3.49733 18.368 2.50533 17.5964 1.67867 16.5493C0.879556 15.5022 0.48 14.0693 0.48 12.2507C0.48 9.96355 1.27911 8.076 2.87733 6.588C4.47556 5.07244 6.56978 4.19067 9.16 3.94267V0.594666H11.8467V3.94267C14.2716 4.16311 16.2142 4.93467 17.6747 6.25733C19.1627 7.55244 20.0031 9.34356 20.196 11.6307H15.1533C15.0707 10.7764 14.74 10.0187 14.1613 9.35733C13.5827 8.66844 12.8111 8.2 11.8467 7.952V16.88C13.6929 17.3209 15.1947 17.7893 16.352 18.2853C17.5093 18.7538 18.4876 19.5116 19.2867 20.5587C20.0858 21.5782 20.4853 22.9973 20.4853 24.816ZM5.27467 12.0027C5.27467 13.1324 5.60533 14.0142 6.26667 14.648C6.95556 15.2818 7.92 15.7916 9.16 16.1773V7.828C7.97511 7.96578 7.02444 8.39289 6.308 9.10933C5.61911 9.82578 5.27467 10.7902 5.27467 12.0027ZM11.8467 29.3627C13.0591 29.1698 14.0098 28.6876 14.6987 27.916C15.3876 27.1169 15.732 26.1662 15.732 25.064C15.732 23.9618 15.3876 23.1076 14.6987 22.5013C14.0373 21.8676 13.0867 21.3578 11.8467 20.972V29.3627Z"
+                        fill="#8b8b8b"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="select-options">
+                    <p>Select</p>
+                    <p class="radio-btn">
+                      <input
+                        type="radio"
+                        id="test3"
+                        name="radio-group"
+                        checked
+                      />
+                      <label for="test3">CIF</label>
+                    </p>
+                    <p class="radio-btn">
+                      <input type="radio" id="test4" name="radio-group" />
+                      <label for="test4">FOB</label>
+                    </p>
+                  </div>
+                  <button>submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="container">
+          <div class="footer-up">
+            <div class="footer-about-us">
+              <div class="footer-logo">
+                <img src="./img/Ayenco (White, Horizontal).png" alt="" />
+              </div>
+              <p>
+                Ayenco is a global provider of polypropylene and petroleum
+                products, offering a comprehensive range of storage, logistics,
+                and supply chain solutions.
+              </p>
+            </div>
+            <div class="footer-links">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-contacts">
+              <h3>Contact information</h3>
+              <ul>
+                <li>
+                  <a href="tel:+90 553 443 23 43"
+                    >TEL NUMBER:+90 553 443 23 43</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@ayenco.com">EMAIL: info@ayenco.com</a>
+                </li>
+                <h3>Social media</h3>
+                <div class="social-links">
+                  <a href="#">
+                    <svg
+                      width="16"
+                      height="16"
+                      class="fill-current"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg
+                      viewBox="0 0 72 72"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Social-Icons---Rounded-Black"
+                          transform="translate(-376.000000, -267.000000)"
+                        >
+                          <g
+                            id="Linkedin"
+                            transform="translate(376.000000, 267.000000)"
+                          >
+                            <path
+                              d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                              id="Rounded"
+                              class="path1"
+                            ></path>
+                            <path
+                              d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                              class="path2"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-down">
+          <div class="container">
+            <div class="footer-down-inner">
+              <p>©2022 Ayenco. All rights reserved.</p>
+              <p>LTD company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/ScrollMagic.min.js"></script>
+    <script src="./js/addIndicators.min.js"></script>
+    <script src="./js/animation.gsap.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

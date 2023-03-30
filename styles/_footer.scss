@@ -1,0 +1,162 @@
+.footer {
+  background: $primary;
+}
+
+.footer-inner {
+  width: 100%;
+  @include flex(center, center, column);
+}
+
+.footer-up {
+  width: 100%;
+  @include flex(stretch, space-between, row);
+  padding: 40px;
+  gap: 40px;
+}
+
+.footer-about-us {
+  @include flex(flex-start, flex-start, column);
+  gap: 20px;
+  width: 100%;
+  .footer-logo {
+    img {
+      height: 70px;
+    }
+  }
+  p {
+    color: #fff;
+    font-size: 16px;
+    max-width: 70%;
+  }
+}
+
+.footer-links {
+  @include flex(flex-start, flex-start, column);
+  gap: 20px;
+  width: 50%;
+  h3 {
+    color: #fff;
+    font-size: 22px;
+    // text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    @include flex(flex-start, center, column);
+    gap: 10px;
+    li {
+      a {
+        color: #fff;
+        font-size: 16px;
+        // text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.3s all ease;
+
+        &:hover {
+          color: $secondary;
+          transition: 0.3s all ease;
+        }
+      }
+    }
+  }
+}
+
+.footer-contacts {
+  @include flex(flex-start, flex-start, column);
+  gap: 20px;
+  width: 50%;
+  h3 {
+    color: #fff;
+    font-size: 22px;
+    // text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li {
+      a {
+        color: #fff;
+        font-size: 16px;
+        // text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.social-links {
+  @include flex(center, flex-start, row);
+  gap: 20px;
+  a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    @include flex(center, center, row);
+    transition: 0.3s all ease;
+    &:hover {
+      background: #fff;
+      transition: 0.3s all ease;
+      svg {
+        path {
+          fill: $primary;
+        }
+        .path1 {
+          fill: $primary;
+        }
+        .path2 {
+          fill: #fff;
+        }
+      }
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      path {
+        fill: #fff;
+      }
+      .path1 {
+        fill: #fff;
+      }
+      .path2 {
+        fill: $primary;
+      }
+    }
+  }
+}
+
+.footer-down {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+
+.footer-down-inner {
+  @include flex(center, space-between, row);
+  padding: 40px;
+  p {
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-up {
+    width: 100%;
+    @include flex(center, center, column);
+    padding: 40px;
+    gap: 40px;
+  }
+  .footer-about-us {
+    width: 100%;
+  }
+  .footer-links {
+    width: 100%;
+  }
+  .footer-contacts {
+    width: 100%;
+  }
+}

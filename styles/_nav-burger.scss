@@ -1,0 +1,154 @@
+.nav-burger {
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s all ease;
+}
+
+.nav-burger.active {
+  opacity: 1;
+  width: 100vw;
+  transition: 0.3s all ease;
+}
+
+.nav-burger.active .nav-burger-wrapper {
+  width: 300px;
+  transition: 0.3s all ease;
+  left: 0;
+}
+
+.nav-burger-wrapper {
+  @include flex(center, flex-start, column);
+  overflow: hidden;
+  background: $primary;
+  width: 0;
+  height: 100vh;
+  transition: 0.3s all ease;
+  padding: 20px;
+  position: absolute;
+  left: -300px;
+  top: 0;
+}
+
+.nav-burger-wrapper-logo {
+  padding: 10px;
+  img {
+    height: 50px;
+  }
+}
+
+.nav-burger-wrapper-lang {
+  @include flex(center, center, row);
+
+  padding: 20px;
+  gap: 20px;
+  .mobile-curr-lang {
+    font-size: $link;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+    transition: 0.3s all ease;
+    &:hover {
+      background: $secondary;
+      transition: 0.3s all ease;
+    }
+  }
+  .active-mobile-curr-lang {
+    background: $secondary;
+  }
+}
+
+.nav-burger-wrapper {
+  overflow: hidden;
+  ul {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 27px;
+    gap: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.nav-burger-li {
+  padding: 7px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: 0.3s all ease;
+  &:hover {
+    background: $secondary;
+    transition: 0.3s all ease;
+  }
+}
+
+.active-nav-burger-li {
+  background: $secondary;
+}
+
+.nav-burger-wrapper li a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.toggle-button {
+  //   position: absolute;
+  //   top: 5.5rem;
+  //   right: 3.8rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  height: 25px;
+  gap: 7px;
+  z-index: 999;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+.toggle-button .bar-page {
+  height: 3px;
+  width: 100%;
+  background: $primary;
+  border-radius: 10px;
+}
+
+.nav-burger-wrapper-get-in-touch {
+  text-decoration: none;
+  color: $secondary;
+  font-size: $link;
+  border: 2px solid $secondary;
+  padding: 10px 20px;
+  width: 260px;
+  @include flex(center, center, row);
+  &:hover {
+    background: $secondary;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .toggle-button {
+    display: flex;
+  }
+}
